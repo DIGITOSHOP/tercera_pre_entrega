@@ -5,7 +5,7 @@ Asegúrate de tener instalado Python y pip en tu sistema. Además, se recomienda
 Uso
 
 - Accede al panel de administración en `http://127.0.0.1:8000/admin` y utiliza las credenciales del superusuario que es : Arturo , contraseña : 123
-- Explora el blog en `http://127.0.0.1:8000/` y comienza a crear y publicar tus entradas.
+- Explora el blog en 127.0.0.1:8000 y comienza a crear y publicar tus entradas.
 - Para acceder a mi template heredado se puede acceder desde : http://127.0.0.1:8000/Cursorobotica/
 - Para acceer a form de busqueda : http://127.0.0.1:8000/busqueda
 
