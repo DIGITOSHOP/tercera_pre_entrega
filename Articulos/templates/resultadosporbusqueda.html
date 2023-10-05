@@ -1,0 +1,13 @@
+<p> estamos buscando el: {{comentario}}</p>
+
+{% if nombres %}
+
+<ul>
+{% for nombre in nombres % }
+    <li  {{ nombre.comentario}}  </li>
+
+{% endfor %}
+
+</ul>
+
+{ %endif %}

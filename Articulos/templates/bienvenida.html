@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIGITOSHOP</title>
+    {% load static %}
+    <link rel="stylesheet" type1="text/css"href="{% static 'estilos.css'%}">
+</head>
+<body>
+        {% include "superior/barra.html" %}
+    <h1>Bienvenidos a DIGITOSHOP</h1>
+    <section>
+        {% for elemento in articulos %}
+        <article>
+            <h3>{{ elemento.nombre }} </h3>
+            <p>
+                {{ elemento.contenido }}
+            </p>
+            <img src="{{ elemento.imagen }}">
+            <footer>
+                Dictado por {{ elemento.autor }}
+            </footer>
+        </article>
+        {%endfor%}
+    </section>
+    <section>
+        <form action="" method="post">
+            {% csrf_token %}
+            <h2> Dudas ??</h2> <br>
+            
+            {{ form.as_table}}
+
+            <input type="submit" name="enviar" value="Enviar Comentario">
+            {% if mensaje %}
+            <h2>{{ mensaje }}</h2>
+            {% endif %}
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+   <title>
+     {% block title %}  {%endblock %}
+
+    </title>
+
+</head>
+
+
+<body>
+    {% include "superior/barra.html" %}
+    <h1 style="background-color: rgb(40, 157, 81);color: blanchedalmond;text-align: center;">DIGITOSHOP</h1>
+
+    <h3> Cursos de Tecnologia </h3>
+
+    {% block content %} 
+    
+    
+    {% endblock %}
+
+    <p> Cursos de Calidad . Gracias por su visita</p>
+
+
+</body>
+
+</html>
